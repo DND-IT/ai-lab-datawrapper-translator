@@ -1,0 +1,90 @@
+$green: #479260;
+$darkGreen: #356d48;
+$red: #d3343f;
+$brightRed: #e9999f;
+$darkRed: #9e272f;
+$darkerRed: #691a1f;
+$brandBlue: #6f7187;
+
+#app {
+  h2, h3, h4, h5, h6, p {
+    font-family: 'TamediaUI', system-ui, sans-serif;
+  }
+  overflow: hidden;
+
+  .ui.progress {
+    background-color: #f0f0f2;
+    .label {
+      font-weight: 300;
+    }
+    .bar {
+      background-color: $brandBlue;
+    }
+    &.error {
+      .bar {
+        background-color: $darkRed !important;
+      }
+      .label {
+        color: $darkRed !important;
+      }
+    }
+    &.success {
+      .bar {
+        background-color: $darkGreen !important;
+      }
+      .label {
+        color: black;
+      }
+    }
+  }
+
+  input, select {
+    border-radius: 99px;
+    font-family: 'TamediaUI', system-ui, sans-serif;
+  }
+  select {
+    padding: 6px 12px;
+    min-height: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  .ui.button {
+    background-color: $brandBlue;
+    color: white;
+    border-radius: 99px;
+    &.success {
+      background-color: $green;
+    }
+  }
+
+  .chart-preview {
+    position: relative;
+    text-align: center;
+    max-width: 80%;
+    margin: 1em auto;
+    box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.5);
+    img {
+      margin: auto;
+    }
+    div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      opacity: 0.8;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+  }
+
+  .ui.negative.message {
+    .header, .close.icon {
+      color: $darkerRed;
+    }
+    box-shadow: 0 0 0 0 $brightRed inset, 0 0 0 0 rgba(0, 0, 0, 0);
+    border: $darkRed !important;
+    color: $darkRed !important;
+  }
+}

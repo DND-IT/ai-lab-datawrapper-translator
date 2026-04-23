@@ -1,0 +1,6 @@
+name: dw-translate
+runtime: node
+team: dai
+config:
+  env:
+    NODE_ENV: production

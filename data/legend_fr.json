@@ -1,0 +1,118 @@
+{
+    "items": [
+        {
+            "id": 18,
+            "icon": {
+                "id": "boom-5",
+                "path": "M710 843l-154-381-282 168 85-348-232-39 134-138-79-92 236 0 36 49-55 86 101 36-36 154c0 0 118-89 122-76 3 13 75 164 82 148 6-17 82-148 82-148l91 20-6-125 108-3-88-105 52-36 249 0-124 72 265 236-331-32 108 255-269-141-95 440z m-518-876l0-52 928 0 0 52-928 0z",
+                "scale": 0,
+                "width": 1424,
+                "height": 758,
+                "horiz-adv-x": 1390
+            },
+            "text": "<p style=\"font-size: 11px;\">Combats intensifs ou bombardements durant les 24 derni\u00e8res heures",
+            "type": "point",
+            "stroke": "null",
+            "fillOpacity": 1,
+            "markerColor": "#d3343f",
+            "markerSymbol": "",
+            "markerPattern": false,
+            "markerTextColor": "#fff"
+        },
+        {
+            "id": 20,
+            "icon": {
+                "id": "area",
+                "path": "M40 810l907 0 0-907-907 0z",
+                "scale": 1.1,
+                "outline": "2px",
+                "horiz-adv-x": 1000
+            },
+            "text": "<p style=\"font-size: 11px;\">Contr\u00f4l\u00e9 par les s\u00e9paratistes prorusses",
+            "type": "area",
+            "stroke": "none",
+            "fillOpacity": 0.5,
+            "markerColor": "#d3343f",
+            "markerSymbol": "",
+            "markerPattern": "solid",
+            "markerTextColor": ""
+        },
+        {
+            "id": 11,
+            "icon": {
+                "id": "area",
+                "path": "M40 810l907 0 0-907-907 0z",
+                "scale": 1.1,
+                "outline": "2px",
+                "horiz-adv-x": 1000
+            },
+            "text": "<p style=\"font-size: 11px;\">Sous contr\u00f4le russe",
+            "type": "area",
+            "stroke": "none",
+            "fillOpacity": 0.2,
+            "markerColor": "#d3343f",
+            "markerSymbol": "",
+            "markerPattern": "solid",
+            "markerTextColor": ""
+        },
+        {
+            "id": 22,
+            "icon": {
+                "id": "area",
+                "path": "M40 810l907 0 0-907-907 0z",
+                "scale": 1.1,
+                "outline": "2px",
+                "horiz-adv-x": 1000
+            },
+            "text": "<p style=\"font-size: 11px;\">Sous contr\u00f4le russe ou prorusse avant f\u00e9vrier 2022",
+            "type": "area",
+            "stroke": "#888",
+            "fillOpacity": 0.2,
+            "markerColor": "#000",
+            "markerSymbol": "",
+            "markerPattern": "vertical",
+            "markerTextColor": ""
+        },
+        {
+            "id": 19,
+            "icon": {
+                "id": "area",
+                "path": "M40 810l907 0 0-907-907 0z",
+                "scale": 1.1,
+                "outline": "2px",
+                "horiz-adv-x": 1000
+            },
+            "text": "<p style=\"font-size: 11px;\">Reconqu\u00eates ukrainiennes",
+            "type": "area",
+            "stroke": "none",
+            "fillOpacity": 0.6,
+            "markerColor": "#378ebd",
+            "markerSymbol": "",
+            "markerPattern": "solid",
+            "markerTextColor": ""
+        },
+        {
+            "id": 21,
+            "icon": {
+                "id": "area",
+                "path": "M40 810l907 0 0-907-907 0z",
+                "scale": 1.1,
+                "outline": "2px",
+                "horiz-adv-x": 1000
+            },
+            "text": "<p style=\"font-size: 11px;\">R\u00e9sistance ukrainienne",
+            "type": "area",
+            "stroke": "none",
+            "fillOpacity": 0.8,
+            "markerColor": "#378ebd",
+            "markerSymbol": "",
+            "markerPattern": "diagonal-up",
+            "markerTextColor": ""
+        }
+    ],
+    "style": "grid",
+    "title": "",
+    "enabled": true,
+    "position": "bottom",
+    "columnWidth": 161
+}
