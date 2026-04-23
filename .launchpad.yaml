@@ -1,6 +1,6 @@
 name: dw-translate
 runtime: node
-team: dai
+team: ai-lab
 config:
   env:
     NODE_ENV: production
