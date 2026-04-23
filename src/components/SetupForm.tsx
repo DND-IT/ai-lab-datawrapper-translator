@@ -8,6 +8,7 @@ interface Props {
   baseChartId: string
   experimental: boolean
   locale: string
+  translationDirection: string
   handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void
   handleSelectChange: (e: React.ChangeEvent<HTMLSelectElement>) => void
   handleToggleExperimental: () => void
@@ -18,6 +19,7 @@ export const SetupForm = ({
   baseChartId,
   experimental,
   locale,
+  translationDirection,
   handleInputChange,
   handleSelectChange,
   handleToggleExperimental,
@@ -60,7 +62,7 @@ export const SetupForm = ({
         <select
           className="ui dropdown"
           onChange={handleSelectChange}
-          defaultValue={locale === 'fr' ? 'DE-FR' : 'FR-DE'}
+          value={translationDirection}
         >
           <option value="DE-FR">{localisationStrings[locale].selectDEFR}</option>
           <option value="FR-DE">{localisationStrings[locale].selectFRDE}</option>

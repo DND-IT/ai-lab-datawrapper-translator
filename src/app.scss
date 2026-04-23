@@ -92,6 +92,27 @@ $brandBlue: #6f7187;
     }
   }
 
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 { margin: 0; }
+  }
+  .locale-toggle {
+    display: flex;
+    gap: 4px;
+    flex-shrink: 0;
+    .ui.button.active {
+      background-color: $brandBlue !important;
+      color: white !important;
+    }
+    .ui.button.basic {
+      background-color: transparent !important;
+      color: $brandBlue !important;
+      box-shadow: 0 0 0 1px $brandBlue inset !important;
+    }
+  }
+
   .ui.negative.message {
     .header, .close.icon {
       color: $darkerRed;

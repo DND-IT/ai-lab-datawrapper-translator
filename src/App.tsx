@@ -15,7 +15,7 @@ const API_ENDPOINT = '/api/translate'
 export function App() {
   const [errorMessage, setErrorMessage] = useState<null | string>(null)
   const [pipeline, setPipeline] = useState('default')
-  const locale = window.location.hostname.match('24heures|tdg') ? 'fr' : 'de'
+  const [locale, setLocale] = useState(() => localStorage.getItem('locale') || 'fr')
   const [title, setTitle] = useState(localisationStrings[locale].title)
   const [baseChartId, setBaseChartId] = useState<null | string>(null)
   const [newChartId, setNewChartId] = useState<null | string>(null)
@@ -32,6 +32,14 @@ export function App() {
     'https://app.datawrapper.de/archive/team/tagesanzeiger/115629',
   )
   const finalStep = 4
+
+  const handleLocaleChange = (newLocale: string) => {
+    setLocale(newLocale)
+    localStorage.setItem('locale', newLocale)
+    setTitle(localisationStrings[newLocale].title)
+    setSourceLang(newLocale === 'fr' ? 'DE' : 'FR')
+    setTargetLang(newLocale === 'fr' ? 'FR' : 'DE')
+  }
 
   useEffect(() => {
     if (currentStep === 0) getUsage()
@@ -200,8 +208,22 @@ export function App() {
     <div className="index">
       <HashRouter>
         <div className="ui vertical segment">
-          <div className="ui text container">
+          <div className="ui text container header-row">
             <h2>{title}</h2>
+            <div className="locale-toggle">
+              <button
+                className={`ui mini button ${locale === 'fr' ? 'active' : 'basic'}`}
+                onClick={() => handleLocaleChange('fr')}
+              >
+                FR
+              </button>
+              <button
+                className={`ui mini button ${locale === 'de' ? 'active' : 'basic'}`}
+                onClick={() => handleLocaleChange('de')}
+              >
+                DE
+              </button>
+            </div>
           </div>
         </div>
         <Routes>
@@ -240,6 +262,7 @@ export function App() {
                 <div className="ta text">
                   <SetupForm
                     baseChartId={baseChartId || ''}
+                    translationDirection={`${sourceLang}-${targetLang}`}
                     handleInputChange={e => setBaseChartId(getChartId(e.target.value))}
                     handleSelectChange={e => {
                       if (e.target.value.includes('-')) {
