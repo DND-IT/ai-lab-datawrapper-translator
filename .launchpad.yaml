@@ -1,6 +1,9 @@
 name: dw-translate
 runtime: node
 team: ai-lab
+environment: dev
 config:
   env:
     NODE_ENV: production
+  secrets:
+    enabled: true
