@@ -1,5 +1,5 @@
-import * as dw from '../services/datawrapper';
-import { getDeeplDictionary } from '../services/deepl';
+import * as dw from '../services/datawrapper.js';
+import { getDeeplDictionary } from '../services/deepl.js';
 
 export class Chart {
   chartId: string;

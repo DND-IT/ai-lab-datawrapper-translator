@@ -1,4 +1,4 @@
-import { config } from './config';
+import { config } from './config.js';
 
 const WEEKDAYS = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
 const MONTHS = [

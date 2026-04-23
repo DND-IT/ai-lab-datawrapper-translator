@@ -1,8 +1,8 @@
 import { Router, Request, Response } from 'express';
-import { Chart } from '../models/chart';
-import { DwMap } from '../models/map';
-import { getApiUsage } from '../services/deepl';
-import * as dw from '../services/datawrapper';
+import { Chart } from '../models/chart.js';
+import { DwMap } from '../models/map.js';
+import { getApiUsage } from '../services/deepl.js';
+import * as dw from '../services/datawrapper.js';
 
 const router = Router();
 

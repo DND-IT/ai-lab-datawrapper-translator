@@ -3,7 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import translateRouter from './routes/translate';
+import translateRouter from './routes/translate.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -25,7 +25,7 @@ async function start() {
     });
     app.use(vite.middlewares);
   } else {
-    const clientDir = resolve(__dirname, '../dist/client');
+    const clientDir = resolve(__dirname, '../client');
     app.use(express.static(clientDir));
     app.get('*', (_req, res) => {
       res.sendFile(resolve(clientDir, 'index.html'));

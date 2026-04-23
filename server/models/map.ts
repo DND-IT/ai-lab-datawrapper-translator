@@ -1,6 +1,6 @@
-import * as dw from '../services/datawrapper';
-import { getDeeplDictionary, addLineBreaks } from '../services/deepl';
-import { updateSpreadsheet, getSpreadsheetValues } from '../services/google-sheets';
+import * as dw from '../services/datawrapper.js';
+import { getDeeplDictionary, addLineBreaks } from '../services/deepl.js';
+import { updateSpreadsheet, getSpreadsheetValues } from '../services/google-sheets.js';
 
 interface Marker {
   id: string;

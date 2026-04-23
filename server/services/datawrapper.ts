@@ -1,5 +1,5 @@
-import { config } from '../config';
-import { checkStatus, getCurrentDate } from '../helpers';
+import { config } from '../config.js';
+import { checkStatus, getCurrentDate } from '../helpers.js';
 import { readFileSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -169,7 +169,7 @@ export async function patchMapMeta(mapId: string, targetLang = 'FR'): Promise<bo
   const metadata = (await metaRes.json()).metadata;
 
   const legendFr = JSON.parse(
-    readFileSync(resolve(__dirname, '../../data/legend_fr.json'), 'utf-8')
+    readFileSync(resolve(__dirname, '../../../data/legend_fr.json'), 'utf-8')
   );
 
   const byline = metadata.describe.byline;

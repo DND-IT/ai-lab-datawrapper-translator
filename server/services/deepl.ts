@@ -1,5 +1,5 @@
-import { config } from '../config';
-import { checkStatus } from '../helpers';
+import { config } from '../config.js';
+import { checkStatus } from '../helpers.js';
 
 export function addLineBreaks(title: string): string {
   if (typeof title !== 'string') return title;

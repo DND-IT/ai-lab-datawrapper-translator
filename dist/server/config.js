@@ -1,0 +1,15 @@
+export const config = {
+    port: parseInt(process.env.PORT || '3000'),
+    dwApiToken: process.env.DW_API_TOKEN || '',
+    dwFolder: parseInt(process.env.DW_FOLDER || '0'),
+    dwFolderUkraineMaps: parseInt(process.env.DW_FOLDER_UKRAINE_MAPS || '0'),
+    deeplToken: process.env.DEEPL_TOKEN || '',
+    deeplEndpoint: process.env.DEEPL_ENDPOINT || 'https://api-free.deepl.com/v2/translate',
+    maxLineLength: parseInt(process.env.MAX_LINE_LENGTH || '18'),
+    slackHookTechnical: process.env.SLACK_HOOK_TECHNICAL || '',
+    slackHookGeneral: process.env.SLACK_HOOK_GENERAL || '',
+    spreadsheetId: process.env.SPREADSHEET_ID || '',
+    spreadsheetRangeWithHeader: process.env.SPREADSHEET_RANGE_WITH_HEADER || 'dw-map-markers!A2:H100',
+    spreadsheetRangeNoHeader: process.env.SPREADSHEET_RANGE_NO_HEADER || 'dw-map-markers!A3:H100',
+    googleServiceAccountJson: process.env.GOOGLE_SERVICE_ACCOUNT_JSON || '',
+};
