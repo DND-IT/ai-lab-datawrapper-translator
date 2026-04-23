@@ -12,6 +12,19 @@ $brandBlue: #6f7187;
   }
   overflow: hidden;
 
+  .ui.text.container {
+    max-width: 900px !important;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  .ui.vertical.segment {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  .ui.form .field {
+    margin-bottom: 1.5em;
+  }
+
   .ui.progress {
     background-color: #f0f0f2;
     .label {
